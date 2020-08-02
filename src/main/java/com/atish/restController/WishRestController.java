@@ -15,6 +15,7 @@ public class WishRestController {
 	@ApiOperation(value = "Get welcome message from the user",response = String.class
 	,tags = "getWelcome Note")
 	public String showMsg(@PathVariable ("name") String name) {
+		System.out.println("Hai");
 		return name+"    "+"Welcome to JavaHero Channel";
 	}
 
